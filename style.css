@@ -1,0 +1,1051 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 95px;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+nav ul {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  left: 50px;
+
+
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+.sn1 {
+  width: 20%;
+  height: 95px;
+  text-align: end;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.sn2 {
+  width: 40%;
+  height: 95px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sn3 {
+  width: 20%;
+  height: 95px;
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sub1 {
+  width: 100%;
+  height: 95px;
+
+  color: black;
+  position: relative;
+  display: none;
+}
+
+.sub1 button {
+  width: auto;
+  height: auto;
+  font-size: 35px;
+  border: none;
+  background: none;
+  padding-left: 45px;
+
+}
+
+.submenu {
+  width: 250px;
+  height: 500px;
+  display: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+}
+
+.submenu ul {
+  width: 250px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-right: 90px;
+}
+.main {
+  width: 100%;
+  height: 800px;
+  background-image: url(Vazisubani_t.jpg);
+  background-position: center top;
+  object-fit: cover;
+  background-size: cover;
+  margin-top: 2px;
+
+}
+
+select {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  text-align: center;
+
+}
+
+.pad1 {
+  width: auto;
+  height: auto;
+  padding-left: 120px;
+  padding-top: 220px;
+}
+
+.pad1 p {
+  font-size: 24px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.pad1 h1 {
+  font-size: 55px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.otaxi {
+  width: 900px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.179);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  top: 150px;
+  border-radius: 10px;
+  z-index: 4;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.wrapper {
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  margin: auto;
+  position: relative;
+  right: 30px;
+  top: 100px;
+  display: none;
+}
+
+.wrapper i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  z-index: 9;
+}
+
+.wrapper .calendar1 {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+.calendar1 .icons {
+  display: flex;
+}
+
+.calendar1 .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child {
+  margin-right: -10px;
+}
+
+.calendar1 .icons span:hover {
+  background: #f2f2f2;
+}
+
+.calendar1 .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar {
+  padding: 20px;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendar .days {
+  margin-bottom: 20px;
+}
+
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.days li.inactive {
+  color: #aaa;
+}
+
+.days li.active {
+  color: #fff;
+}
+
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+  background: #9B59B6;
+}
+
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+
+.otaxi h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.otaxi span {
+  color: white;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 300;
+
+}
+
+.otaxi button {
+  width: 140px;
+  height: 60px;
+  margin-top: 50px;
+  border-radius: 9px;
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+  border: none;
+}
+
+.otaxi a {
+  text-decoration: none;
+  color: black;
+}
+
+.mtavari {
+  width: 100%;
+  height: auto;
+}
+
+.main2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 600px;
+
+
+}
+
+.left h3 {
+  font-size: 30px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.left p {
+  font-size: 17px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  padding-top: 20px;
+
+}
+
+.left img {
+  position: relative;
+  top: 50px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.right {
+  width: 50%;
+  height: 600px;
+
+}
+
+.right img {
+  margin-top: 50px;
+  margin-left: 10px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.texti {
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.texti p {
+  font-size: 16px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.texti h3 {
+  font-size: 19px;
+  color: black;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fotoebi {
+  width: 100%;
+  height: 1300px;
+  margin: auto;
+  margin-top: 150px;
+  background-color: rgba(150, 150, 150, 0.331);
+}
+
+.imgg {
+  width: 1050px;
+  height: auto;
+  margin: auto;
+}
+
+.imgg img {
+  position: relative;
+  bottom: 100px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.imgg2 {
+  width: 1050px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.imgg2 img {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.satauri {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+.satauri h1 {
+  font-size: 30px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+.satauri span {
+  font-size: 24px;
+  padding-left: 110px;
+}
+
+.satauri h2 {
+  font-size: 35px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  padding-left: 30px;
+}
+
+.bolo {
+  width: 100%;
+  height: 550px;
+  margin-top: 200px;
+  background-image: url(Vazisubanjpg.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #ebebeb;
+
+}
+
+.foot {
+  width: 1100px;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.foot ul {
+
+  list-style: none;
+}
+
+.fot1 {
+  width: auto;
+  height: auto;
+}
+
+.fot2 {
+  width: auto;
+  height: auto;
+}
+
+.fot3 {
+  width: auto;
+  height: auto;
+}
+
+.fot4 {
+  width: auto;
+  height: auto;
+}
+
+
+.fot1 a {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.fot2 a {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.fot3 a {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.fot4 input {
+  width: 420px;
+  height: 30px;
+  border: none;
+  border-bottom: solid black 1px;
+  background: none;
+}
+
+.fot4 input::placeholder {
+  font-size: 16px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.fot4 button {
+  width: 160px;
+  height: 40px;
+  border-radius: 9px;
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: black;
+  border: none;
+}
+
+@media screen and (max-width: 1646px) {
+  nav {
+    width: 100%;
+    height: 95px;
+
+  }
+
+  .mtavari {
+    width: 100%;
+    height: auto;
+  }
+
+  .main2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+
+  }
+
+  .right {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+
+  }
+
+}
+
+@media screen and (max-width: 1114px) {
+  .fotoebi {
+    width: 100%;
+    height: auto;
+  }
+
+  .imgg {
+    width: 900px;
+    height: auto;
+    text-align: center;
+  }
+
+  .imgg img {
+    width: 850px;
+    height: 523px;
+  }
+
+  .imgg2 {
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 910px) {
+  .fotoebi {
+    width: 100%;
+    height: auto;
+  }
+
+  .imgg {
+    width: 700px;
+    height: auto;
+    text-align: center;
+  }
+
+  .imgg img {
+    width: 550px;
+    height: 523px;
+  }
+
+  .imgg2 {
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    height: 600px;
+
+    padding-top: 50px;
+    text-align: center;
+
+  }
+
+  .right img {
+    width: 600px;
+    height: 380px;
+  }
+
+
+}
+
+@media screen and (max-width: 794px) {
+  nav {
+    width: 100%;
+    height: 95px;
+  }
+
+  nav ul {
+    width: 600px;
+
+
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+  }
+
+}
+
+@media screen and (max-width: 711px) {
+  .left {
+    width: 100%;
+    height: 600px;
+
+
+  }
+
+  .left img {
+    width: 444px;
+    height: 320px;
+  }
+
+  .texti {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  .texti p {
+    font-size: 13px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+  }
+
+  .texti h3 {
+    font-size: 13px;
+    color: black;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+}
+
+@media screen and (max-width: 694px) {
+
+  .main {
+    width: 100%;
+    height: 800px;
+    flex-wrap: wrap;
+
+  }
+
+  .pad1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .pad1 p {
+    font-size: 24px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+  }
+
+  .pad1 h1 {
+    font-size: 55px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+  }
+
+  .otaxi {
+    width: 400px;
+    height: 150px;
+
+  }
+
+  .otaxi h1 {
+    color: white;
+    font-size: 20px;
+  }
+
+  .otaxi span {
+    color: white;
+    font-size: 10px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+
+  }
+  .otaxi button{
+    width: 140px;
+    height: 60px;
+  }
+
+  .imgg2 {
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .imgg {
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+
+  .imgg img {
+    width: 400px;
+    height: 323px;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 660px) {
+  .right img {
+    width: 430px;
+    height: 300px;
+  }
+
+  .texti {
+    width: 400px;
+    height: 460px;
+  }
+
+  .texti p {
+    font-size: 10px;
+  }
+
+  .right {
+    width: 100%;
+    height: 450px;
+  }
+
+
+}
+
+@media screen and (max-width: 613px) {
+
+
+  nav ul {
+    display: none;
+  }
+
+  .sub1 {
+    display: block;
+    color: black;
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .sn1 {
+    width: 25%;
+    height: 95px;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .sn2 {
+    width: 50%;
+    height: 95px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sn3 {
+    width: 25%;
+    height: 95px;
+    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+
+}
+
+@media screen and (max-width: 508px) {
+  .main2 {
+    width: 100%;
+    height: auto;
+    text-align: start;
+  }
+
+  .left img {
+    width: 350px;
+    height: 300px;
+
+  }
+
+  .right img {
+    width: 350px;
+    height: 300px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 460px) {
+  .imgg img {
+    width: 330px;
+    height: 223px;
+  }
+
+  .imgg {
+    width: 340px;
+    height: 330px;
+    text-align: center;
+  }
+
+  .imgg2 {
+    width: 320px;
+    height: auto;
+  }
+
+  .imgg2 img {
+    width: 300px;
+    height: 400px;
+  }
+
+
+
+
+}
+@media screen and (max-width: 414px) {
+  .otaxi {
+    width: 250px;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .wrapper {
+    width: 250px;
+    position: relative;
+    left: 3px;
+  }
+
+  .pad1 {
+    display: none;
+  }
+
+  .left img {
+    width: 280px;
+    height: auto;
+
+  }
+
+  .left {
+    width: 334px;
+    height: auto;
+  }
+
+  .right img {
+    width: 280px;
+    height: auto;
+
+  }
+
+  .right {
+    width: 334px;
+    height: auto;
+  }
+
+  .texti {
+    width: 270px;
+    height: 450px;
+  }
+
+  .imgg {
+    width: 290px;
+    height: auto;
+  }
+
+  .imgg img {
+    width: 280px;
+    height: 223px;
+  }
+  .main2{
+    width: 100%;
+         display: flex;
+         justify-content: end;
+         flex-direction: column;
+         flex-wrap: wrap;
+
+  }
+  .left{
+    margin: auto;
+  }
+  .right{
+    margin: auto;
+  }
+
+  
+}
+
+@media screen and (max-width: 363px) {
+  .otaxi {
+    width: 250px;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .wrapper {
+    width: 250px;
+    position: relative;
+    left: 3px;
+  }
+
+  .pad1 {
+    display: none;
+  }
+
+  .left img {
+    width: 280px;
+    height: auto;
+
+  }
+
+  .left {
+    width: 334px;
+    height: auto;
+  }
+
+  .right img {
+    width: 280px;
+    height: auto;
+
+  }
+
+  .right {
+    width: 334px;
+    height: auto;
+  }
+
+  .texti {
+    width: 270px;
+    height: 450px;
+  }
+
+  .imgg {
+    width: 290px;
+    height: auto;
+  }
+
+  .imgg img {
+    width: 280px;
+    height: 223px;
+  }
+  .otaxi button{
+    width: 140px;
+    height: 60px;
+  }
+
+
+
+}
